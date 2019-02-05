@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2011 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+    <!-- GemPlus Reader -->
+    <usb-device vendor-id="2278" product-id="13367" />
+    <!-- Accessov3 -->
+    <usb-device vendor-id="1027" product-id="64208" />
+    <!-- Omnikey Cardman 5321 -->
+    <usb-device vendor-id="1899" product-id="21281" />
+    <!-- Omnikey Cardman 5321 CL -->
+    <usb-device vendor-id="1899" product-id="21280" />
+    <!-- SCM SCL010 -->
+    <usb-device vendor-id="1254" product-id="21137" />
+    <!-- SCM SCL011 -->
+    <usb-device vendor-id="1254" product-id="21139" />
+    <!-- SCM autre -->
+    <usb-device vendor-id="1254" product-id="21905" />
+    <!-- Weneo -->
+    <usb-device vendor-id="7693" product-id="8243" />
+    <!-- Springcard Prw'N'Roll Pc/Sc -->
+    <usb-device vendor-id="7220" product-id="28993" />
+    <!-- Any Smart card reader class 0X0B -->
+    <usb-device class="11"/>
+</resources>

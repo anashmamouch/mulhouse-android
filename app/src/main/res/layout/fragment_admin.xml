@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/layout_body"
+    tools:context="com.otipass.mulhouse.AdminFragment">
+    <LinearLayout
+        style="@style/layout_header.center"
+        >
+        <ImageView
+            android:id="@+id/img_header"
+            style="@style/image_header.admin"
+            />
+        <TextView
+            android:id="@+id/header_text"
+            style="@style/header_text.admin"
+            />
+    </LinearLayout>
+    <LinearLayout
+        style="@style/layout_text_error"
+        >
+        <TextView
+            android:id="@+id/error_text"
+            style="@style/text_error"
+            />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        style="@style/layout_content"
+        >
+        <EditText
+            android:id="@+id/pwd"
+            style="@style/edit_text_init.password"
+            />
+
+        <EditText
+            android:id="@+id/provider_id"
+            style="@style/edit_text_init.admin"
+            />
+
+        <Button
+            android:id="@+id/btn_Valid"
+            style="@style/button_connexion.small.admin"
+            />
+    </RelativeLayout>
+</LinearLayout>

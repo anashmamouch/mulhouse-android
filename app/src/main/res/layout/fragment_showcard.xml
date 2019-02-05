@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/layout_body"
+    android:keepScreenOn="true"
+    android:id="@+id/show_layout"
+    tools:context="com.otipass.mulhouse.ShowcardFragment">
+
+    <LinearLayout
+        android:id="@+id/header"
+        style="@style/layout_header.center"
+        >
+        <ImageView
+            android:id="@+id/img_header"
+            style="@style/image_header.scan"
+            />
+        <LinearLayout
+            style="@style/layout_header.service"
+            >
+            <TextView
+                android:id="@+id/header_text"
+                style="@style/header_text.scan"
+                />
+            <TextView
+                android:id="@+id/header_service"
+                style="@style/header_text.service"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/message"
+        android:layout_below="@+id/header"
+        style="@style/layout_body.wrap"
+        >
+        <TextView
+            android:id="@+id/pass_number"
+            style="@style/pass_status_text.bold"
+            />
+        <TextView
+            android:id="@+id/pass_message"
+            style="@style/pass_status_text"
+            />
+        <TextView
+            android:id="@+id/service_status"
+            style="@style/pass_status_text.bold"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/layout_body.center.margin"
+        android:layout_below="@+id/message"
+        >
+        <ImageView
+            android:id="@+id/img_status"
+            style="@style/image_status"
+            />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/title_message_text"
+        style="@style/title_message_text.otherscan" />
+
+</RelativeLayout>

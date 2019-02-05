@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+<LinearLayout
+    style="@style/layout_service_selection"
+    >
+        <LinearLayout
+            style="@style/layout_title"
+            >
+            <ImageView
+                style="@style/image_selection_title"
+                />
+            <TextView
+                android:id="@+id/dialog_title"
+                style="@style/dialog_title"
+                />
+        </LinearLayout>
+        <LinearLayout
+            style="@style/layout_separator"
+            >
+        </LinearLayout>
+        <TextView
+            android:id="@+id/rb_error"
+            style="@style/error_text"
+            android:text="@string/please_select_service"
+            />
+            <RadioGroup
+                android:id="@+id/radio_group"
+                style="@style/rb_group"
+                >
+            </RadioGroup>
+        <Button
+            android:id="@+id/btn_ok"
+            style="@style/button_single.dialog"
+            />
+
+</LinearLayout>
+</ScrollView>

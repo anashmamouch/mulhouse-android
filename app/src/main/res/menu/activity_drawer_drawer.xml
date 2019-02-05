@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ico_home"
+            android:title="@string/home" />
+        <item
+            android:id="@+id/nav_entry"
+            android:icon="@drawable/ico_entry"
+            android:title="@string/entry" />
+        <item
+            android:id="@+id/nav_stats"
+            android:icon="@drawable/ico_stats"
+            android:title="@string/stats" />
+    </group>
+
+    <item android:title="@string/connexion_serveur">
+        <menu>
+            <item
+                android:id="@+id/nav_synchro"
+                android:icon="@drawable/ico_synchro"
+                android:title="@string/synchro" />
+            <item
+                android:id="@+id/nav_init"
+                android:icon="@drawable/ico_init1"
+                android:title="@string/init_synchro" />
+        </menu>
+    </item>
+
+    <item android:title="@string/tools">
+        <menu>
+            <item
+                android:id="@+id/nav_cancel"
+                android:icon="@drawable/ico_cancel"
+                android:title="@string/cancel" />
+            <item
+                android:id="@+id/nav_tickets"
+                android:icon="@drawable/ico_contact"
+                android:title="@string/contact" />
+        </menu>
+    </item>
+
+</menu>

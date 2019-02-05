@@ -1,0 +1,14 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/layout_body.horizontal"
+    >
+
+    <ImageView
+        android:id="@+id/img_connection_status"
+        style="@style/footer_image"
+        />
+
+    <TextView
+        android:id="@+id/connection_status"
+        style="@style/footer_text" />
+
+</LinearLayout>

@@ -1,0 +1,624 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- Main frame layout container - activity_drawer.xml -->
+    <style name="layout_frame">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginTop">@dimen/toolbar_height</item>
+        <item name="android:layout_marginBottom">@dimen/footer_height</item>
+        <item name="android:layout_gravity">top</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@color/bck_layout</item>
+    </style>
+
+    <!-- layout footer container - activity_drawer.xml -->
+    <style name="layout_footer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/footer_height</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
+    </style>
+
+    <!-- layout fragment body -->
+    <style name="layout_body">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="layout_body.horizontal">
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <style name="layout_body.center">
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="layout_body.wrap">
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="layout_body.wrap.padding">
+        <item name="android:padding">@dimen/padding2</item>
+    </style>
+    <style name="layout_body.wrap.padding.margin">
+        <item name="android:background">@drawable/container_messages</item>
+        <item name="android:layout_marginTop">@dimen/padding3</item>
+        <item name="android:layout_marginRight">@dimen/padding3</item>
+        <item name="android:layout_marginLeft">@dimen/padding3</item>
+
+    </style>
+    <style name="layout_body.background">
+        <item name="android:background">@color/bck_layout</item>
+    </style>
+
+    <!-- for relative layout -->
+    <style name="layout_body.center.margin">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginBottom">@dimen/bottom_button_size</item>
+    </style>
+
+    <!-- layout content  -->
+    <style name="layout_content">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+
+    <!-- layout fragment body -->
+    <style name="layout_relative">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <!-- layout fragment body -->
+    <style name="layout_relative_body">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="layout_message">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/padding3</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/container_messages</item>
+    </style>
+    <style name="layout_message.error">
+        <item name="android:background">@drawable/container_error</item>
+    </style>
+
+    <!-- widget toolbar -->
+    <style name="widget_toolbar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="android:minHeight">?attr/actionBarSize</item>
+        <item name="android:background">?attr/colorPrimary</item>
+    </style>
+
+    <!-- nav bar, drawer menu -->
+    <!-- layout -->
+    <style name="layout_nav">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/nav_header_height</item>
+        <item name="android:background">@drawable/side_nav_bar</item>
+        <item name="android:paddingBottom">@dimen/activity_vertical_margin</item>
+        <item name="android:paddingTop">@dimen/activity_vertical_margin</item>
+        <item name="android:paddingRight">@dimen/activity_horizontal_margin</item>
+        <item name="android:paddingLeft">@dimen/activity_horizontal_margin</item>
+        <item name="android:theme">@style/ThemeOverlay.AppCompat.Dark</item>
+    </style>
+    <style name="layout_nav.orientation">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- image -->
+    <style name="image_nav">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@mipmap/logo</item>
+        <item name="android:padding">@dimen/padding0</item>
+    </style>
+
+    <!-- layout fragment header, all fragments in fragment_frame -->
+    <style name="layout_header">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">@dimen/header_height</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:background">@color/bck_header</item>
+    </style>
+    <style name="layout_header.center">
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="layout_header.service">
+        <item name="android:orientation">vertical</item>
+    </style>
+    <!-- Image header  -->
+    <style name="image_header">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginRight">@dimen/header_img_margin</item>
+        <item name="android:layout_marginLeft">@dimen/header_img_margin</item>
+    </style>
+    <style name="image_header.user">
+        <item name="android:src">@mipmap/unlock_small</item>
+    </style>
+    <style name="image_header.admin">
+        <item name="android:src">@mipmap/init_small</item>
+    </style>
+    <style name="image_header.home">
+        <item name="android:src">@mipmap/home_small</item>
+    </style>
+    <style name="image_header.scan">
+        <item name="android:src">@mipmap/entry_small</item>
+    </style>
+    <style name="image_header.input">
+        <item name="android:src">@mipmap/keyboard_small</item>
+    </style>
+    <style name="image_header.cancel">
+        <item name="android:src">@mipmap/cancel_small</item>
+    </style>
+    <style name="image_header.exception">
+        <item name="android:src">@mipmap/bug_small</item>
+    </style>
+    <!-- Text header  -->
+    <style name="header_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:padding">@dimen/header_text_padding</item>
+        <item name="android:textColor">@color/text_color1</item>
+        <item name="android:textSize">@dimen/header_text_size</item>
+    </style>
+    <style name="header_text.user">
+        <item name="android:text">@string/identification</item>
+    </style>
+    <style name="header_text.admin">
+        <item name="android:text">@string/Titre_admin</item>
+    </style>
+    <style name="header_text.home">
+        <item name="android:text">@string/bienvenue_short</item>
+    </style>
+    <style name="header_text.scan">
+        <item name="android:text">@string/entry_control</item>
+    </style>
+    <style name="header_text.input">
+        <item name="android:text">@string/scan_manually</item>
+    </style>
+    <style name="header_text.cancel">
+        <item name="android:text">@string/cancel_last_entry</item>
+    </style>
+    <style name="header_text.exception">
+        <item name="android:text">@string/exception</item>
+    </style>
+    <style name="header_text.service">
+        <item name="android:textSize">@dimen/service_text_size</item>
+    </style>
+
+    <!-- Footer  -->
+    <style name="footer_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:padding">@dimen/footer_text_padding</item>
+        <item name="android:textColor">@color/text_color1</item>
+        <item name="android:textSize">@dimen/footer_text_size</item>
+    </style>
+    <style name="footer_image">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/footer_left_margin</item>
+        <item name="android:layout_marginTop">@dimen/footer_top_margin</item>
+        <item name="android:src">@drawable/no_connection</item>
+    </style>
+
+    <!-- layout text error  -->
+    <style name="layout_text_error">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:background">@color/bck_text_error</item>
+    </style>
+    <!-- Text error admin, user  -->
+    <style name="text_error">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/edit_text_padding</item>
+        <item name="android:textColor">@color/text_color1</item>
+        <item name="android:textSize">@dimen/edit_text_size</item>
+    </style>
+
+    <!-- Text edit  for fragment_admin, fragment_user, fragment_input -->
+    <style name="edit_text_init">
+        <item name="android:layout_width">@dimen/edit_text_container_size</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginTop">@dimen/edit_text_margin</item>
+        <item name="android:layout_marginRight">@dimen/edit_text_margin</item>
+        <item name="android:background">@drawable/container3</item>
+        <item name="android:textColor">@color/noir</item>
+        <item name="android:textSize">@dimen/edit_text_size</item>
+        <item name="android:padding">@dimen/edit_text_padding</item>
+        <item name="android:textCursorDrawable">@drawable/color_cursor</item>
+        <item name="android:ems">10</item>
+        <item name="android:inputType">textNoSuggestions|textVisiblePassword</item>
+    </style>
+
+
+
+    <style name="edit_text_init.login">
+        <item name="android:hint">@string/prompt_login</item>
+    </style>
+
+    <style name="edit_text_init.admin">
+        <item name="android:hint">@string/prompt_Provider_id</item>
+        <item name="android:layout_below">@+id/pwd</item>
+    </style>
+
+    <style name="edit_text_init.password">
+        <item name="android:hint">@string/prompt_password</item>
+        <item name="android:inputType">textPassword</item>
+    </style>
+
+    <style name="edit_text_init.password.user">
+        <item name="android:layout_below">@+id/login</item>
+    </style>
+
+    <style name="edit_text_init.input">
+        <item name="android:hint">@string/serial</item>
+        <item name="android:imeOptions">actionSearch</item>
+        <item name="android:maxLength">16</item>
+    </style>
+
+    <!-- Connection buttom admin, user  -->
+    <style name="button_connexion">
+        <item name="android:background">@drawable/container1</item>
+        <item name="android:layout_width">@dimen/button_size</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/edit_text_padding</item>
+        <item name="android:textSize">@dimen/edit_text_size</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:textColor">@color/text_color1</item>
+    </style>
+
+    <style name="button_connexion.small">
+        <item name="android:layout_toRightOf">@+id/pwd</item>
+        <item name="android:layout_alignBaseline">@+id/pwd</item>
+        <item name="android:text">@string/Global_ok</item>
+    </style>
+
+    <style name="button_connexion.small.admin">
+        <item name="android:layout_toRightOf">@+id/provider_id</item>
+        <item name="android:layout_alignBaseline">@+id/provider_id</item>
+        <item name="android:text">@string/Global_ok</item>
+    </style>
+
+    <style name="button_connexion.input">
+        <item name="android:layout_toRightOf">@+id/enter_serial</item>
+        <item name="android:layout_alignBaseline">@+id/enter_serial</item>
+        <item name="android:text">@string/Global_ok</item>
+    </style>
+
+    <!-- Layout bottom button  -->
+    <style name="button_single">
+        <item name="android:background">@drawable/container1</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/padding1</item>
+        <item name="android:textSize">@dimen/text_button</item>
+        <item name="android:textColor">@color/text_color1</item>
+    </style>
+    <style name="button_single.scanmanually">
+        <item name="android:layout_height">@dimen/bottom_button_size</item>
+        <item name="android:text">@string/enter_no_manually</item>
+        <item name="android:paddingRight">@dimen/padding2</item>
+        <item name="android:paddingLeft">@dimen/padding2</item>
+        <item name="android:layout_marginBottom">@dimen/padding0</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+    <style name="button_single.exception">
+        <item name="android:text">@string/return_home</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+    <style name="button_single.cancel">
+        <item name="android:text">@string/entry_cancellation</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+    <style name="button_single.action">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/padding4</item>
+        <item name="android:padding">@dimen/padding2</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <!-- Static texts   -->
+    <!-- Drawer menu   -->
+    <style name="nav_header_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/text_color1</item>
+        <item name="android:textSize">@dimen/nav_header_title</item>
+    </style>
+
+
+
+    <style name="title_message_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/padding1</item>
+        <item name="android:textColor">@color/text_color1</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
+        <item name="android:textSize">@dimen/text1</item>
+    </style>
+    <style name="title_message_text.scan">
+        <item name="android:text">@string/scan_pass</item>
+    </style>
+    <style name="title_message_text.input">
+        <item name="android:text">@string/input_pass_number</item>
+    </style>
+    <style name="title_message_text.otherscan">
+        <item name="android:text">@string/scan_other_pass</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:textSize">@dimen/text0</item>
+        <item name="android:background">@color/bck_header</item>
+    </style>
+
+    <style name="message_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/padding0</item>
+        <item name="android:textColor">@color/text_color1</item>
+        <item name="android:textSize">@dimen/text1</item>
+    </style>
+    <style name="message_text.warning">
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="pass_status_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/paddingMin</item>
+        <item name="android:textColor">@color/text_color1</item>
+        <item name="android:textSize">@dimen/text1</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="pass_status_text.bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="exception_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/text_color1</item>
+        <item name="android:textSize">@dimen/text1</item>
+        <item name="android:padding">@dimen/padding3</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="error_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/text_color1</item>
+        <item name="android:textSize">@dimen/text1</item>
+        <item name="android:padding">@dimen/padding3</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@color/bck_error_message</item>
+    </style>
+
+    <!-- Home image   -->
+    <style name="image_home">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:src">@mipmap/img_3_pass</item>
+    </style>
+
+    <!-- anim image   -->
+    <style name="image_anim">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+    <style name="image_anim.pass">
+        <item name="android:src">@mipmap/img_pass_small</item>
+    </style>
+
+    <!-- status image   -->
+    <style name="image_status">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@mipmap/st_orange</item>
+    </style>
+
+    <!-- Progress bar wait   -->
+    <style name="progress_bar_wait">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:indeterminate">true</item>
+    </style>
+
+    <!-- Web view   -->
+    <style name="web_view">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <!-- Autocomplete_item -->
+    <style name="autocomplete_item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/autocomplete_item</item>
+        <item name="android:textSize">@dimen/edit_text_size</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/padding0</item>
+        <item name="android:background">@color/bck_edit_text</item>
+        <item name="android:textColor">@color/noir</item>
+    </style>
+
+    <!-- ViewPager messages -->
+
+    <!-- layout for pager item  -->
+    <style name="layout_body.viewpager">
+        <item name="android:background">@drawable/container_messages</item>
+    </style>
+    <!-- Scroll view  -->
+    <style name="viewpager_scroll">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:fadeScrollbars">false</item>
+    </style>
+    <style name="viewpager_scroll.weight">
+        <item name="android:layout_weight">5.8</item>
+    </style>
+
+    <!-- Messages Text  -->
+    <style name="viewpager_message_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:padding">@dimen/padding2</item>
+        <item name="android:textColor">@color/text_color1</item>
+        <item name="android:textSize">@dimen/text1</item>
+    </style>
+
+    <!-- Messages Button  -->
+    <style name="button_messages">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:background">@drawable/container1</item>
+        <item name="android:textSize">@dimen/text1</item>
+        <item name="android:textColor">@color/text_color1</item>
+        <item name="android:padding">@dimen/padding0</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+    <style name="button_messages.weight">
+        <item name="android:layout_weight">1.2</item>
+    </style>
+    <!-- Viewpager element  -->
+    <style name="viewpager_element">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginBottom">@dimen/viewpager_margin_bottom</item>
+        <item name="android:layout_marginTop">@dimen/viewpager_margin</item>
+        <item name="android:layout_marginRight">@dimen/viewpager_margin</item>
+        <item name="android:layout_marginLeft">@dimen/viewpager_margin</item>
+    </style>
+
+    <!-- Control Buttons  -->
+    <style name="buttons_control">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/viewpager_margin_bottom</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_marginBottom">@dimen/padding0</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- Error dialog  -->
+    <style name="layout_error">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/padding1</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/container_error</item>
+    </style>
+    <style name="layout_title">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <style name="dialog_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/text_color1</item>
+        <item name="android:textSize">@dimen/text1</item>
+        <item name="android:padding">@dimen/padding1</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <style name="dialog_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/text_color1</item>
+        <item name="android:textSize">@dimen/text1</item>
+        <item name="android:padding">@dimen/padding3</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="layout_separator">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dialog_separator</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@color/bck_separator</item>
+    </style>
+    <style name="image_error_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/padding1</item>
+        <item name="android:src">@mipmap/ic_err</item>
+    </style>
+    <style name="button_single.dialog">
+        <item name="android:text">@string/Global_ok</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <!-- service selection dialog  -->
+    <style name="layout_service_selection">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginLeft">@dimen/popup_margin</item>
+        <item name="android:layout_marginRight">@dimen/popup_margin</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/container_dialog</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+    <style name="image_selection_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/padding1</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:src">@mipmap/ic_question</item>
+    </style>
+
+    <!-- radio button  -->
+    <style name="rb_group">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/padding3</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+    <style name="rb_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textColor">@color/text_color1</item>
+        <item name="android:textSize">@dimen/text1</item>
+        <item name="android:button">@null</item>
+        <item name="android:drawableLeft">@drawable/radiobutton</item>
+        <item name="android:drawablePadding">@dimen/padding1</item>
+        <item name="android:paddingBottom">@dimen/padding1</item>
+    </style>
+</resources>

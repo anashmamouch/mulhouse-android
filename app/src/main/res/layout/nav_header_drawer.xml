@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/layout_nav.orientation"
+    >
+
+    <ImageView
+        android:id="@+id/imageView"
+        style="@style/image_nav"
+        />
+
+    <TextView
+        style="@style/nav_header_text"
+        android:text="@string/app_name"
+        />
+
+</LinearLayout>

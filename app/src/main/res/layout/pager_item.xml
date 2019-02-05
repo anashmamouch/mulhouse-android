@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/layout_body.viewpager"
+    >
+    <ScrollView
+        android:id="@+id/scrollMessages"
+        style="@style/viewpager_scroll.weight"
+        >
+        <TextView
+            android:id="@+id/txt_pager_item"
+            style="@style/viewpager_message_text"
+            />
+    </ScrollView>
+    <Button
+        android:id="@+id/btn_pager_item"
+        style="@style/button_messages.weight"
+        />
+
+</LinearLayout>

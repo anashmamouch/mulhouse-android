@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="blanc">#FFFFFF</color>
+    <color name="noir">#000000</color>
+
+    <color name="bck_layout">#dddddd</color>
+    <color name="bck_header">#777777</color>
+    <color name="bck_text_error">#D72401</color>
+    <color name="bck_edit_text">#FFFFFF</color>
+    <color name="bck_button">#016FA8</color>
+    <color name="bck_warning_message">#FD9801</color>
+    <color name="bck_error_message">#D72401</color>
+    <color name="bck_ok_message">#039433</color>
+    <color name="bck_layout_dialog">#aaaaaa</color>
+    <color name="transparent">#80ffffff</color>
+
+    <color name="st_orange">#FD9801</color>
+    <color name="st_green">#039433</color>
+    <color name="st_red">#D72401</color>
+    <color name="bck_title_err">#BC1F01</color>
+    <color name="bck_separator">#ffffff</color>
+
+
+    <color name="text_color1">#FFFFFF</color>
+
+</resources>

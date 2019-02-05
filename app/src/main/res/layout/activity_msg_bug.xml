@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/layout_body.background"
+    tools:context="com.otipass.mulhouse.BugMsgActivity">
+
+    <LinearLayout
+        android:id="@+id/header"
+        style="@style/layout_header.center"
+        >
+        <ImageView
+            android:id="@+id/img_header"
+            style="@style/image_header.exception"
+            />
+        <TextView
+            android:id="@+id/header_text"
+            style="@style/header_text.exception"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/exception_layout"
+        style="@style/layout_message.error"
+        >
+        <TextView
+            android:id="@+id/exception_text"
+            android:text="@string/app_bug"
+            style="@style/exception_text"
+            />
+        <Button
+            android:id="@+id/btn_return"
+            style="@style/button_single.exception"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

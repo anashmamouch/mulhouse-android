@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/layout_error"
+    >
+    <LinearLayout
+        style="@style/layout_title"
+        >
+        <ImageView
+            style="@style/image_error_title"
+            />
+        <TextView
+            android:id="@+id/dialog_title"
+            style="@style/dialog_title"
+            />
+    </LinearLayout>
+    <LinearLayout
+        style="@style/layout_separator"
+        >
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/dialog_text"
+        style="@style/dialog_text"
+        />
+    <Button
+        android:id="@+id/btn_ok"
+        style="@style/button_single.dialog"
+        />
+</LinearLayout>

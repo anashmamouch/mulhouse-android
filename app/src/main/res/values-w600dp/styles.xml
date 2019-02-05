@@ -1,0 +1,109 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <!-- nav bar, drawer menu -->
+    <style name="layout_nav.orientation">
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">bottom</item>
+    </style>
+
+    <!-- layout fragment header -->
+    <style name="layout_header">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/header_height</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:background">@color/bck_header</item>
+    </style>
+    <style name="layout_header.center">
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+    <style name="layout_header.service">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <!-- Image header  -->
+    <style name="image_header">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">@dimen/header_img_margin</item>
+        <item name="android:layout_marginBottom">@dimen/header_img_margin</item>
+    </style>
+    <style name="image_header.user">
+        <item name="android:src">@mipmap/unlock</item>
+    </style>
+    <style name="image_header.admin">
+        <item name="android:src">@mipmap/init</item>
+    </style>
+    <style name="image_header.home">
+        <item name="android:src">@mipmap/home</item>
+    </style>
+    <style name="image_header.scan">
+        <item name="android:src">@mipmap/entry</item>
+        <item name="android:layout_marginTop">@dimen/header_img_margin2</item>
+        <item name="android:layout_marginBottom">@dimen/header_img_margin2</item>
+    </style>
+    <style name="image_header.input">
+        <item name="android:src">@mipmap/keyboard</item>
+    </style>
+    <style name="image_header.exception">
+        <item name="android:src">@mipmap/bug</item>
+    </style>
+    <style name="header_text.home">
+        <item name="android:text">@string/bienvenue</item>
+    </style>
+
+    <!-- Text header  -->
+    <style name="header_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/header_text_padding</item>
+        <item name="android:textColor">@color/text_color1</item>
+        <item name="android:textSize">@dimen/header_text_size</item>
+    </style>
+
+    <style name="edit_text_init.login">
+        <item name="android:hint">@string/prompt_login</item>
+        <item name="android:layout_marginTop">@dimen/padding4</item>
+    </style>
+
+    <style name="edit_text_init.password">
+        <item name="android:hint">@string/prompt_password</item>
+        <item name="android:inputType">textPassword</item>
+    </style>
+    <!-- Home image   -->
+    <style name="image_home">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:src">@mipmap/img_3_pass</item>
+    </style>
+
+    <!-- anim image   -->
+    <style name="image_anim">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+    <style name="image_anim.pass">
+        <item name="android:src">@mipmap/img_pass</item>
+    </style>
+
+</resources>

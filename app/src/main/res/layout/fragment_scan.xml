@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/layout_body"
+    tools:context="com.otipass.mulhouse.ScanFragment">
+    <LinearLayout
+        style="@style/layout_header.center"
+        >
+        <ImageView
+            android:id="@+id/img_header"
+            style="@style/image_header.scan"
+            />
+        <LinearLayout
+            style="@style/layout_header.service"
+            >
+            <TextView
+                android:id="@+id/header_text"
+                style="@style/header_text.scan"
+                />
+            <TextView
+                android:id="@+id/header_service"
+                style="@style/header_text.service"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        style="@style/layout_body.wrap" >
+        <TextView
+            android:id="@+id/title_message_text"
+            style="@style/title_message_text.scan" />
+    </LinearLayout>
+    <RelativeLayout
+        style="@style/layout_relative_body" >
+        >
+        <ImageView
+            android:id="@+id/img_wave"
+            style="@style/image_anim"
+            />
+
+        <ImageView
+            android:id="@+id/img_pass"
+            style="@style/image_anim.pass"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

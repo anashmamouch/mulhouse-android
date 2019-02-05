@@ -1,0 +1,22 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/layout_body"
+    tools:context="com.otipass.mulhouse.WebviewFragment">
+    <RelativeLayout
+        android:id="@+id/loadingPanel"
+        style="@style/layout_body.center" >
+        <ProgressBar
+            style="@style/progress_bar_wait" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/WebAccessFragment_layout_1"
+        style="@style/layout_body"
+        >
+        <WebView
+            android:id="@+id/webView"
+            style="@style/web_view"
+        />
+    </RelativeLayout>
+
+
+</LinearLayout>

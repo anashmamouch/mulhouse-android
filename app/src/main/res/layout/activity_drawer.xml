@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+    <FrameLayout
+        style="@style/layout_body"
+        >
+
+        <android.support.v7.widget.Toolbar
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/toolbar"
+            style="@style/widget_toolbar"
+            app:theme="@style/AppTheme.AppBarOverlay"
+            >
+        </android.support.v7.widget.Toolbar>
+
+        <!-- Layout holding main fragment -->
+        <RelativeLayout
+            android:id="@+id/fragment_frame"
+            style="@style/layout_frame"
+            >
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/footer"
+            style="@style/layout_header"
+            >
+        </RelativeLayout>
+
+
+    </FrameLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header_drawer"
+        app:menu="@menu/activity_drawer_drawer" />
+</android.support.v4.widget.DrawerLayout>

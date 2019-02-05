@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/layout_body"
+    tools:context="com.otipass.mulhouse.HomeFragment">
+
+    <LinearLayout
+        style="@style/layout_header.center"
+        >
+        <ImageView
+            android:id="@+id/img_header"
+            style="@style/image_header.home"
+            />
+        <TextView
+            android:id="@+id/header_text"
+            style="@style/header_text.home"
+            />
+    </LinearLayout>
+    <LinearLayout
+        style="@style/layout_body" >
+        <TextView
+            android:id="@+id/title_message_text"
+            style="@style/title_message_text" />
+
+        <LinearLayout
+            android:id="@+id/layout_pass"
+            style="@style/layout_body.center" >
+            <ImageView
+                android:id="@+id/img_pass"
+                style="@style/image_home" />
+
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/layout_message"
+            style="@style/layout_relative"
+            >
+            <android.support.v4.view.ViewPager
+                android:id="@+id/pager_container"
+                style="@style/viewpager_element"
+                tools:listitem="@layout/pager_item"
+                />
+            <LinearLayout
+                android:id="@+id/viewPagerCountDots"
+                style="@style/buttons_control"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,195 @@
+<resources>
+    <string name="app_name">Mulhouse City Pass</string>
+
+    <string name="identification">Identification</string>
+    <string name="prompt_login">Login</string>
+    <string name="prompt_password">Mot de passe</string>
+    <string name="Connexion">Connexion</string>
+    <string name="Initialisation">Initialisation</string>
+    <string name="bienvenue">Bienvenue sur l\'application Mulhouse City Pass !</string>
+    <string name="bienvenue_short">Bienvenue !</string>
+    <string name="scan_pass">Veuillez scanner un City Pass</string>
+    <string name="scan_other_pass">Vous pouvez scanner un autre City Pass</string>
+    <string name="input_pass_number">Veuillez saisir le n° du Pass</string>
+    <string name="synchro_serveur">Synchroniser avec le serveur</string>
+    <string name="CANCEL">Annuler</string>
+    <string name="RETURN">Retour</string>
+    <string name="VALIDER">Valider</string>
+    <string name="serial">N° du Pass:</string>
+    <string name="veuillez_scanner_un_pass">Veuillez scanner un Pass</string>
+    <string name="pass_x_j">Pass %1$d</string>
+    <string name="Global_information">Information</string>
+    <string name="Global_ok">OK</string>
+    <string name="Global_oui">Oui</string>
+    <string name="Global_non">Non</string>
+    <string name="warning_message_title">Avertissement</string>
+    <string name="error_message_title">Erreur applicative</string>
+    <string name="Saisie_Provider_Id">Saisie du Provider Id</string>
+    <string name="Identifiants_incorrects">Identifiants incorrects</string>
+    <string name="Provider_id_incorrect">Provider id incorrect</string>
+    <string name="Titre_admin">Séquence d\'initialisation</string>
+    <string name="prompt_Provider_id">Id Provider</string>
+    <string name="Valider">Valider</string>
+    <string name="Confirmation_quitter">Voulez-vous vous déconnecter ?</string>
+    <string name="connected_as">Vous êtes connecté en tant que</string>
+    <string name="enter_no_manually">Entrer le n° manuellement</string>
+    <string name="entry_control">Contrôle des entrées</string>
+    <string name="confirmation_action">Confirmation de l\'action</string>
+    <string name="voulez_vous_continuer">Voulez-vous continuer ?</string>
+    <string name="Global_veuillez_patienter">Veuillez patienter...</string>
+    <string name="app_bug">\nmulhouse City Pass s\'est arrêtée suite à un problème logiciel.\n\nVeuillez nous en excuser.</string>
+    <string name="unknown">inconnu</string>
+
+    <!-- Menu, about, ... -->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+    <string name="about">A propos de Mulhouse City Pass</string>
+    <string name="init_synchro">Initialisation des données</string>
+    <string name="synchro">Synchronisation</string>
+    <string name="appareil">Tablette</string>
+    <string name="home">Accueil</string>
+    <string name="entry">Entrée</string>
+    <string name="stats">Statistiques</string>
+    <string name="title_activity_drawer">Accueil</string>
+    <string name="scan_manually">Saisie manuelle du n° de Pass</string>
+    <string name="scan">Scan</string>
+    <string name="tools">Outils</string>
+    <string name="exception">Arrêt accidentel de l\'application</string>
+    <string name="return_home">Retour accueil</string>
+    <string name="contact">Support technique</string>
+
+    <!-- cancellation  -->
+    <string name="cancel">Annulation</string>
+    <string name="entry_cancellation">Annuler cette entrée</string>
+    <string name="cancel_last_entry">Annulation de la dernière entrée</string>
+    <string name="no_entry_2_cancel">Il n\'y a aucune entrée à annuler durant le dernier quart d\'heure</string>
+    <string name="entry_2_cancel">Vous vous apprêtez à annuler l\'entrée du Pass n° %1$s enregistrée le %2$s</string>
+    <string name="cancel_success">L\'entrée a été annulée</string>
+    <string name="cancel_fail">Une erreur est survenue durant l\'annulation. Cette entrée n\'a pas été annulée</string>
+
+    <!-- native NFC  -->
+    <string name="NFC_not_active">La fonction NFC n\'est pas activée sur cet équipement</string>
+    <!-- NFC via reader  -->
+    <string name="reader_ko">Il n\'y a aucun lecteur de cartes connecté à cet équipement</string>
+
+    <!-- Card check -->
+    <string name="pass_no">Pass n° %1$s</string>
+    <string name="no_service">Il n\'y a pas de prestation valide sur le Pass</string>
+    <string name="provider_has_no_service">Il n\'y a pas de prestation associée à votre établissement</string>
+    <string name="no_service_4_provider">Il n\'y a pas de prestation associée à ce prestataire</string>
+    <string name="device_off_line">Ce Pass est inconnu.\nAbsence de connexion internet pour confirmation serveur</string>
+    <string name="valid_pass_ok">Ce Pass est valide jusqu\'au %1$s</string>
+    <string name="err_pas_city_pass">Ce Pass n\'est pas un City Pass mulhouse.</string>
+    <string name="err_unknown_pass">Ce Pass est inconnu</string>
+    <string name="err_invalid_pass">Ce Pass est bloqué, son utilisation est interdite</string>
+    <string name="err_expired_pass">Ce Pass est expiré depuis le %1$s</string>
+    <string name="conso_ok">La prestation %1$s a été consommée</string>
+    <string name="service_consumed">Il n\'y a plus de prestation %1$s valide sur le Pass</string>
+    <string name="err_service_consumed">Erreur lors de la consommation de la prestation %1$s</string>
+    <string name="first_use">Première utilisation du Pass.</string>
+    <string name="created_state_off_line">Ce Pass n\'a pas été vendu. Absence de connexion internet pour confirmation serveur</string>
+    <string name="created_state">Ce Pass n\'a pas été vendu</string>
+    <string name="no_expiry_off_line">Ce Pass ne contient pas de date de validité. Absence de connexion internet pour confirmation serveur</string>
+    <string name="no_expiry">Ce Pass ne contient pas de date de validité</string>
+    <string name="check_card_state_running">Vérification du Pass par le serveur\n</string>
+    <string name="must_enter_valid_pass">Vous devez saisir un n° de Pass valide!</string>
+    <string name="entry_denied">L\' entrée est refusée</string>
+    <string name="one_entry_consumed">1 entrée %1$s consommée</string>
+    <string name="entry_consumed_remaining">1 entrée %1$s consommée - reste : %2$d</string>
+    <string name="pass_not_ok">Ce Pass n\'est pas en service</string>
+    <string name="pass_not_ok_off_line">Ce Pass n\'est pas en service.\nAbsence de connexion internet pour confirmation serveur</string>
+
+    <!-- Service selection -->
+    <string name="several_services_available">Veuillez sélectionner la prestation à consommer :</string>
+    <string name="please_select_service">Sélection obligatoire!</string>
+
+    <!-- Synchro server -->
+    <string name="connexion_serveur">Connexion au serveur</string>
+    <string name="synchro_running">Une communication avec le serveur est en cours: %1$s, veuillez patienter...</string>
+    <string name="Communication_en_cours">Communication en cours</string>
+    <string name="Fin_communication_ok">La synchronisation avec le serveur est terminée</string>
+    <string name="Fin_communication_erreur">La synchronisation avec le serveur a été interrompue. Erreur: </string>
+    <string name="Connexion_erreur">Impossible de se connecter au serveur</string>
+    <string name="WL_erreur">Impossible d\'obtenir la liste blanche</string>
+    <string name="Param_erreur">Impossible d\'obtenir la liste des paramètres</string>
+    <string name="User_erreur">Impossible d\'obtenir la liste des utilisateurs</string>
+    <string name="WL_Rec_erreur">Impossible de sauvegarder la liste blanche</string>
+    <string name="Param_Rec_erreur">Impossible de sauvegarder la liste des paramètres</string>
+    <string name="User_Rec_erreur">Impossible de sauvegarder la liste des utilisateurs</string>
+    <string name="Upload_erreur">Impossible d\'envoyer les données au serveur</string>
+    <string name="Entry_erreur">Impossible d\'envoyer les entrées au serveur</string>
+    <string name="Autre_erreur">Traitement indéterminé</string>
+    <string name="Upload_step">Connexion OK, envoi des données au serveur ...</string>
+    <string name="Entry_step">Envoi des entrées au serveur ...</string>
+    <string name="WL_step">Connexion OK, attente liste blanche ...</string>
+    <string name="WL_step_n">Réception liste blanche</string>
+    <string name="Param_step">Sauvegarde utilisateurs OK, attente paramètres ...</string>
+    <string name="Param_step1">Sauvegarde des packages</string>
+    <string name="User_step">Sauvegarde Liste Blanche OK, attente utilisateurs ...</string>
+    <string name="Stock_step">Réception des données Stock ...</string>
+    <string name="Message_step">Réception des messages ...</string>
+    <string name="Bug_step">Réception des exceptions ...</string>
+    <string name="WL_Insert_step">Liste blanche OK, sauvegarde de la liste blanche ...</string>
+    <string name="User_Insert_step">Utilisateurs OK, sauvegarde des utilisateurs ...</string>
+    <string name="Param_Insert_step">Paramètres OK, sauvegarde des paramètres ...</string>
+    <string name="UploadDB_step">Envoi DB ...</string>
+    <string name="UploadLogCat_step">Envoi Logcat ...</string>
+    <string name="Init">Connexion OK, attente Initialisation ...</string>
+    <string name="Init_erreur">Impossible d\'exécuter la séquence d\'initialisation</string>
+    <string name="partial_BDD">La base de données interne de la tablette n\'est pas complète. Il y a un risque de refus de certaines cartes.</string>
+    <string name="msg_pas_de_synchro_nuit">Il n\'y a pas eu de connexion au serveur central durant la nuit.</string>
+    <string name="msg_pas_connecte">Cet appareil n\'est pas connecté à Internet actuellement.</string>
+    <string name="vous_devez_connecter_et_synchroniser">Vous devez connecter cet appareil à  Internet puis cliquer sur le bouton "Synchroniser".</string>
+    <string name="vous_devez_synchroniser">Vous devez synchroniser maintenant en cliquant sur le bouton "Synchroniser".</string>
+    <string name="synchroniser">Synchroniser</string>
+    <string name="telecharger">Télécharger</string>
+    <string name="supprimer">Supprimer</string>
+    <string name="nouvelle_version_dispo">Une nouvelle version logicielle est disponible pour cet appareil.</string>
+    <string name="vous_devez_connecter_et_telecharger">Vous devez connecter cet appareil à Internet puis cliquer sur le bouton "Télécharger".</string>
+    <string name="vous_devez_telechrager">Vous devez télécharger cette nouvelle version  maintenant en cliquant sur le bouton "Télécharger".</string>
+    <string name="erreur_telechargement">Une erreur est survenue lors du téléchargement.</string>
+    <string name="erreur_synchro">Une erreur est survenue lors de la synchronisation.</string>
+    <string name="sequence_initialisation_longue">La séquence d\'initialisation des données peut prendre plusieurs minutes.</string>
+    <string name="download_error">Une erreur est survenue lors du téléchargement.</string>
+
+    <!-- Connection short messages for upload -->
+    <string name="Upload_step_1">Envoi des données au serveur</string>
+    <string name="Upload_step_2">Réception des données</string>
+    <string name="Upload_step_3">Enregistrement des données</string>
+    <string name="Upload_end_OK">OK:</string>
+    <string name="Upload_end_err">Erreur:</string>
+    <string name="Upload">Serveur</string>
+    <string name="Aucun_appel_serveur">Aucun appel serveur</string>
+    <string name="aucune_connexion_disponible">Aucune connexion disponible</string>
+
+
+    <!-- User messages-->
+    <string name="no_messages">Vous n\'avez aucun message.</string>
+    <string name="nouveau_message">Vous avez un message :</string>
+    <string name="nouveaux_messages">Vous avez %1$d messages :</string>
+
+    <!-- Support messages-->
+    <string name="support_response">Vous avez posté le ticket suivant :</string>
+    <string name="here_is_response">Voici la réponse :</string>
+    <string name="access_tickets">Accéder aux tickets</string>
+
+
+    <string-array name="user_profiles">
+        <item>contrôleur</item>
+        <item>caissier</item>
+        <item>gestionnaire</item>
+        <item>manageur</item>
+        <item>régisseur</item>
+    </string-array>
+
+    <string-array name="categories">
+        <item>Prestataire</item>
+        <item>Point de vente</item>
+        <item>Point de vente et Prestataire</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
