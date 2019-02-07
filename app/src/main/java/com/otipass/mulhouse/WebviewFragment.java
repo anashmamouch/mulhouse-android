@@ -39,7 +39,7 @@ import com.otipass.tools.Callback;
 import com.otipass.tools.ExceptionHandler;
 import com.otipass.tools.tools;
 
-import org.apache.http.util.EncodingUtils;
+//import org.apache.http.util.EncodingUtils;
 
 import java.net.URL;
 
